@@ -16,7 +16,7 @@ const useStyles = makeStyles(() => ({
 const Header = () => {
     const { header, logo } = useStyles();
     return (
-        <header>
+        <header mb="2rem">
             <AppBar className={header}>
                 <Toolbar>
                     <Typography variant="h6" component="h1" className={logo}>Anime Watchlist</Typography>
