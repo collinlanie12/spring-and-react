@@ -1,9 +1,18 @@
+import React from 'react';
+import { Switch, Route } from 'react-router-dom';
+import GlobalStyles from './GlobalStyles';
 
+import Home from './pages/Home/Home';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-
+      <GlobalStyles />
+      <div>
+        <Switch>
+          <Route exact path='/' component={Home} />
+        </Switch>
+      </div>
     </div>
   );
 }
